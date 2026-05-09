@@ -1,3 +1,0 @@
-Convert blog entries into Substack newsletter content with this tool that pulls from a Datasette backup of simonwillison.net. The application fetches recent blog posts, links, quotes, and notes, then generates formatted HTML ready to paste into Substack, while also tracking which content has already been sent in previous newsletters to avoid duplicates. Users can customize the time period, reorder stories via drag-and-drop, and preview the final newsletter layout before copying it to the clipboard.
-
-<!-- Generated from commit: 70d9c64a0753d0b66845cdae647173b7d3eee77c -->

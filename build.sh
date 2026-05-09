@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
 
+if command -v python >/dev/null 2>&1; then
+    PYTHON=python
+else
+    PYTHON=python3
+fi
+
 # Make sure we have the full git history for finding commit dates:
 if [ -f .git/shallow ]; then
     git fetch --unshallow
@@ -9,25 +15,25 @@ fi
 echo "=== Building tools.simonwillison.net ==="
 
 echo "Gathering links and metadata..."
-python gather_links.py
+$PYTHON gather_links.py
 
 # Only generate LLM summaries if GENERATE_LLM_DOCS is set
 if [ "$GENERATE_LLM_DOCS" = "1" ]; then
     echo "Generating LLM documentation..."
-    python write_docs.py
+    $PYTHON write_docs.py
 fi
 
 echo "Building colophon page..."
-python build_colophon.py
+$PYTHON build_colophon.py
 
 echo "Building dates.json..."
-python build_dates.py
+$PYTHON build_dates.py
 
 echo "Building index page..."
-python build_index.py
+$PYTHON build_index.py
 
 echo "Building by-month page..."
-python build_by_month.py
+$PYTHON build_by_month.py
 
 echo "Injecting footer.js into HTML files..."
 # Get the git hash of the last commit that touched footer.js
@@ -59,6 +65,6 @@ done
 
 # Build redirects last so they don't get indexed in tools.json
 echo "Building redirects from _redirects.json..."
-python build_redirects.py
+$PYTHON build_redirects.py
 
 echo "=== Build complete! ==="
