@@ -213,8 +213,8 @@ def build_index() -> None:
         }}
         nav {{
             text-align: left;
-            background: linear-gradient(to bottom, rgb(154, 103, 175) 0%, rgb(96, 72, 129) 49%, rgb(100, 67, 130) 100%);
-            color: white;
+            background: linear-gradient(to bottom, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%);
+            color: #075985;
         }}
         nav p {{
             display: flex;
@@ -227,7 +227,7 @@ def build_index() -> None:
         nav a:hover,
         nav a:focus,
         nav a:active {{
-            color: white;
+            color: #075985;
             text-decoration: none;
         }}
         section.body {{
@@ -336,7 +336,7 @@ def build_index() -> None:
 </head>
 <body>
 <nav>
-    <p><a href="/">werk.771022.xyz</a></p>
+    <p><a href="/">Werkzeugkoffer</a></p>
 </nav>
 <section class="body">
 {body_html}
