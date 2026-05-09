@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "big-words.html": {
+      "commits": [
+        {
+          "hash": "79b60c7046b0dea9ec0e4b7ea0e4fbb9ee310f35",
+          "date": "2026-05-09T13:23:05+08:00",
+          "message": "Keep only Big Words tool\n"
+        },
+        {
+          "hash": "\n88649b855ef1043bb078fb1aaaa5b7c3df702c5a",
+          "date": "2026-05-07T14:19:09-07:00",
+          "message": "big-words: support inline markdown formatting (#280)\n\nAdds *italic*, **bold**, _underline_, and `code` to the rendered text,\nwith backslash-escapes for literal markers. Input is HTML-escaped before\nmarkdown processing so script/HTML in the ?text= URL parameter cannot\nexecute.\n\nCo-authored-by: Claude <noreply@anthropic.com>"
+        },
+        {
+          "hash": "\nff163d643cab0d017afa420ce7099e9773746559",
+          "date": "2026-05-07T11:47:09-07:00",
+          "message": "Add Big Words - interactive text styling web application (#279)\n\n> Build big-words.html - a page which takes ?text= from the query string and shows that as big white text on a black background centered both horizontally and vertically\n> \n> This is for  creating slides\n> \n> If you double click or double tap it should show a form with fields to control the parameters - text= but also color= (text color, color picker) and bgcolor= (background color) and a few others that you think would be neat, maybe a gradient thing or drop shadows, with useful previews?\n> \n> On submit that form should send the user to the page with ?text= etc parameters so it can be bookmarked\n> \n> Make sure the form shows in a way that allows the rest of the page to work as a live preview of what it will look like\n\n* Add big-words.html slide page with live-preview settings form\n\n* Remove outline option, default shadow color to white\n\n* Support data-hide-footer opt-out, set on big-words.html\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>"
+        }
+      ],
+      "urls": []
+    }
+  }
+}
