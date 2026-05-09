@@ -169,8 +169,8 @@ if (!skipFooter) {
         <nav style="font-family: system-ui, -apple-system, sans-serif; font-size: 12px; text-align: center; font-style: normal; padding-bottom: 1rem;">
             <a href="/" style="color: ${textColor}; text-decoration: underline; margin-right: 1.5rem;">Home</a>
             <a href="/colophon#${filename}" style="color: ${textColor}; text-decoration: underline; margin-right: 1.5rem;">About ${pageName}</a>
-            <a href="https://github.com/simonw/tools/blob/main/${filename}" style="color: ${textColor}; text-decoration: underline; margin-right: 1.5rem;">View source</a>
-            <a href="https://github.com/simonw/tools/commits/main/${filename}" style="color: ${textColor}; text-decoration: underline;" id="footer-changes-link">Changes</a>
+            <a href="https://github.com/stefanzweig/gongju/blob/main/${filename}" style="color: ${textColor}; text-decoration: underline; margin-right: 1.5rem;">View source</a>
+            <a href="https://github.com/stefanzweig/gongju/commits/main/${filename}" style="color: ${textColor}; text-decoration: underline;" id="footer-changes-link">Changes</a>
         </nav>
     `;
 

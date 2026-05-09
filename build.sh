@@ -12,7 +12,7 @@ if [ -f .git/shallow ]; then
     git fetch --unshallow
 fi
 
-echo "=== Building tools.simonwillison.net ==="
+echo "=== Building werk.771022.xyz ==="
 
 echo "Gathering links and metadata..."
 $PYTHON gather_links.py

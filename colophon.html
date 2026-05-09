@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tools.simonwillison.net colophon</title>
+    <title>werk.771022.xyz colophon</title>
     <style>
         * {
             box-sizing: border-box;
@@ -195,21 +195,19 @@
 </head>
 <body>
 <nav>
-    <p><a href="/">Simon Willison's Tools</a> <a href="https://simonwillison.net/">My blog</a></p>
+    <p><a href="/">werk.771022.xyz</a></p>
 </nav>
 <section class="body">
-    <h1>tools.simonwillison.net colophon</h1>
+    <h1>werk.771022.xyz colophon</h1>
 
-    <p>The tools on <a href="https://tools.simonwillison.net/">tools.simonwillison.net</a> were mostly built using <a href="https://simonwillison.net/tags/ai-assisted-programming/">AI-assisted programming</a>. This page lists 1 tools and their development history.</p>
-    <p>This page lists the commit messages for each tool, many of which link to the LLM transcript used to produce the code.</p>
-    <p>Here's <a href="https://simonwillison.net/2025/Mar/11/using-llms-for-code/#a-detailed-example">how I built this colophon page</a>. The descriptions for each of the tools were <a href="https://simonwillison.net/2025/Mar/13/tools-colophon/">generated using Claude Haiku 4.5</a>.</p>
+    <p>This page lists 1 tool and its development history.</p>
 
     <div class="tool" id="big-words.html">
         <div class="tool-name">
             <h2 class="heading">
                 <span class="hash-text"><a class="hashref" href="#big-words.html">#</a></span>
-                <span class="main-text"><a href="https://tools.simonwillison.net/big-words">big-words</a></span>
-                <span class="code-text"><a href="https://github.com/simonw/tools/blob/main/big-words.html">code</a></span>
+                <span class="main-text"><a href="https://werk.771022.xyz/big-words">big-words</a></span>
+                <span class="code-text"><a href="https://github.com/stefanzweig/gongju/blob/main/big-words.html">code</a></span>
             </h2>
         </div>
 <div class="docs"><div class="body-f"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z"/></svg>AI generated</span><p>Display and customize large text with real-time formatting options including fonts, colors, gradients, and effects. Double-click or double-tap the display area to open the settings panel and adjust text content, styling, and background appearance. Share your creations by saving the customized URL with all your settings encoded as query parameters.</p>
@@ -220,28 +218,28 @@
             <div class="commit" id="commit-
 ff163d">
                 <div>
-                    <a href="https://github.com/simonw/tools/commit/
+                    <a href="https://github.com/stefanzweig/gongju/commit/
 ff163d643cab0d017afa420ce7099e9773746559" class="commit-hash">
 ff163d</a>
                     <span class="commit-date">May 07, 2026 11:47</span>
                 </div>
-                <div class="commit-message">Add Big Words - interactive text styling web application (<a href="https://github.com/simonw/tools/issues/279">#279</a>)<br><br>&gt; Build big-words.html - a page which takes ?text= from the query string and shows that as big white text on a black background centered both horizontally and vertically<br>&gt; <br>&gt; This is for  creating slides<br>&gt; <br>&gt; If you double click or double tap it should show a form with fields to control the parameters - text= but also color= (text color, color picker) and bgcolor= (background color) and a few others that you think would be neat, maybe a gradient thing or drop shadows, with useful previews?<br>&gt; <br>&gt; On submit that form should send the user to the page with ?text= etc parameters so it can be bookmarked<br>&gt; <br>&gt; Make sure the form shows in a way that allows the rest of the page to work as a live preview of what it will look like<br><br>* Add big-words.html slide page with live-preview settings form<br><br>* Remove outline option, default shadow color to white<br><br>* Support data-hide-footer opt-out, set on big-words.html<br><br>---------<br><br>Co-authored-by: Claude &lt;noreply@anthropic.com&gt;</div>
+                <div class="commit-message">Add Big Words - interactive text styling web application (#279)<br><br>&gt; Build big-words.html - a page which takes ?text= from the query string and shows that as big white text on a black background centered both horizontally and vertically<br>&gt; <br>&gt; This is for  creating slides<br>&gt; <br>&gt; If you double click or double tap it should show a form with fields to control the parameters - text= but also color= (text color, color picker) and bgcolor= (background color) and a few others that you think would be neat, maybe a gradient thing or drop shadows, with useful previews?<br>&gt; <br>&gt; On submit that form should send the user to the page with ?text= etc parameters so it can be bookmarked<br>&gt; <br>&gt; Make sure the form shows in a way that allows the rest of the page to work as a live preview of what it will look like<br><br>* Add big-words.html slide page with live-preview settings form<br><br>* Remove outline option, default shadow color to white<br><br>* Support data-hide-footer opt-out, set on big-words.html<br><br>---------<br><br>Co-authored-by: Claude &lt;noreply@anthropic.com&gt;</div>
             </div>
 
             <div class="commit" id="commit-
 88649b">
                 <div>
-                    <a href="https://github.com/simonw/tools/commit/
+                    <a href="https://github.com/stefanzweig/gongju/commit/
 88649b855ef1043bb078fb1aaaa5b7c3df702c5a" class="commit-hash">
 88649b</a>
                     <span class="commit-date">May 07, 2026 14:19</span>
                 </div>
-                <div class="commit-message">big-words: support inline markdown formatting (<a href="https://github.com/simonw/tools/issues/280">#280</a>)<br><br>Adds *italic*, **bold**, _underline_, and `code` to the rendered text,<br>with backslash-escapes for literal markers. Input is HTML-escaped before<br>markdown processing so script/HTML in the ?text= URL parameter cannot<br>execute.<br><br>Co-authored-by: Claude &lt;noreply@anthropic.com&gt;</div>
+                <div class="commit-message">big-words: support inline markdown formatting (#280)<br><br>Adds *italic*, **bold**, _underline_, and `code` to the rendered text,<br>with backslash-escapes for literal markers. Input is HTML-escaped before<br>markdown processing so script/HTML in the ?text= URL parameter cannot<br>execute.<br><br>Co-authored-by: Claude &lt;noreply@anthropic.com&gt;</div>
             </div>
 
             <div class="commit" id="commit-79b60c7">
                 <div>
-                    <a href="https://github.com/simonw/tools/commit/79b60c7046b0dea9ec0e4b7ea0e4fbb9ee310f35" class="commit-hash">79b60c7</a>
+                    <a href="https://github.com/stefanzweig/gongju/commit/79b60c7046b0dea9ec0e4b7ea0e4fbb9ee310f35" class="commit-hash">79b60c7</a>
                     <span class="commit-date">May 09, 2026 13:23</span>
                 </div>
                 <div class="commit-message">Keep only Big Words tool<br></div>
@@ -265,5 +263,6 @@ ff163d</a>
     });
     </script>
 </section>
+<script type="module" src="footer.js?ff163d64"></script>
 </body>
 </html>

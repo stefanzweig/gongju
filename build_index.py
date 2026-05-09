@@ -184,7 +184,7 @@ def build_index() -> None:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tools.simonwillison.net</title>
+    <title>werk.771022.xyz</title>
     <style>
         body {{
             font-family: "Helvetica Neue", helvetica, sans-serif;
@@ -336,7 +336,7 @@ def build_index() -> None:
 </head>
 <body>
 <nav>
-    <p><a href="/">Simon Willison's Tools</a> <a href="https://simonwillison.net/">My blog</a></p>
+    <p><a href="/">werk.771022.xyz</a></p>
 </nav>
 <section class="body">
 {body_html}
