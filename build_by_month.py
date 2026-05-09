@@ -253,15 +253,13 @@ def build_by_month() -> None:
             filename = tool["filename"]
             summary = tool["summary"]
             truncated = tool["truncated"]
-            tool_url = f"https://tools.simonwillison.net/{slug}"
-            colophon_url = f"https://tools.simonwillison.net/colophon#{filename}"
+            tool_url = f"https://werk.771022.xyz/{slug}"
 
             html_content += f'        <li class="tool-item">\n'
             html_content += f'            <span class="tool-name"><a href="{tool_url}">{slug}</a></span>\n'
-            html_content += f'            <span class="tool-links">(<a href="{colophon_url}">about</a>)</span>\n'
             if summary:
                 if truncated:
-                    html_content += f'            <div class="tool-summary">{summary} <a href="{colophon_url}">...</a></div>\n'
+                    html_content += f'            <div class="tool-summary">{summary} ...</div>\n'
                 else:
                     html_content += f'            <div class="tool-summary">{summary}</div>\n'
             html_content += '        </li>\n'

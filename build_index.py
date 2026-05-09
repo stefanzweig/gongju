@@ -108,10 +108,8 @@ def _render_recent_section(recently_added: Sequence[dict], recently_updated: Seq
             else:
                 formatted_date = ""
             
-            # Create colophon link for the date
-            colophon_url = f"https://tools.simonwillison.net/colophon#{filename}" if filename else "#"
             date_html = (
-                f'<span class="recent-date"> — <a href="{colophon_url}">{formatted_date}</a></span>'
+                f'<span class="recent-date"> — {formatted_date}</span>'
                 if formatted_date
                 else ""
             )

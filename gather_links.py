@@ -117,9 +117,13 @@ def main():
     results = {"pages": {}}
     tools_summary = []
 
-    # Process each HTML file
+    generated_pages = {"index.html", "colophon.html", "by-month.html"}
+
+    # Process each tool HTML file
     for html_file in html_files:
         file_name = html_file.name
+        if file_name in generated_pages:
+            continue
         print(f"Processing {file_name}...")
 
         # Get commit details for this file
@@ -161,7 +165,7 @@ def main():
             "description": description,
             "created": created_date,
             "updated": updated_date,
-            "url": f"/{slug}" if slug != "index" else "/",
+                "url": f"https://werk.771022.xyz/{slug}" if slug != "index" else "https://werk.771022.xyz/",
         }
         tools_summary.append(tool_entry)
 
